@@ -9,7 +9,17 @@ async function insertUser(user) {
   return newUserObject // { user_id: 7, username: 'foo', password: 'xxxxxxx' }
 }
 
+function getUserById(id) {
+  return db('users').where('id', id).first()
+}
+
+function getUserBy(filter) {
+  return db('users').where(filter).first()
+}
+
 module.exports = {
   getAllUsers,
-  insertUser
+  insertUser,
+  getUserById,
+  getUserBy
 }
