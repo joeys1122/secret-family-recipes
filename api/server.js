@@ -17,6 +17,10 @@ server.use('/api/auth', authRouter)
 server.use('/api/users', restricted, usersRouter)
 server.use('/api/recipes', restricted, recipesRouter)
 
+server.get('/', (req, res) => {
+  res.send('Secret Family Recipe Cookbook API')
+})
+
 server.use((err, req, res, next) => { //eslint-disable-line
   res.status(err.status || 500).json({
     message: err.message,

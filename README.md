@@ -2,7 +2,7 @@
 
 **Heroku API**
 
-Deployed URL:
+Deployed URL: (https://bw50-secret-family-recipes.herokuapp.com/)
 
 ## API Endpoints
 
