@@ -72,7 +72,7 @@ async function editRecipe(updatedRecipe, recipe_id) {
     await editIngredients(recipe_ingredients[i].ingredient_name, updatedRecipe.ingredients[i].ingredient_name)
   }
 
-  const recipe_categories = getRecipeCategories(recipe_id)
+  const recipe_categories = await getRecipeCategories(recipe_id)
 
   for(let i = 0; i < recipe_categories.length; i++) {
     await editCategories(recipe_categories[i].category_name, updatedRecipe.categories[i].category_name)
