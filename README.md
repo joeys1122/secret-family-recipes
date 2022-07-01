@@ -1,8 +1,8 @@
 # Secret Family Recipes Cookbook
 
-**Heroku API**
+[Front-End Repository](https://github.com/joeys1122/secret-family-recipes-front-end)
 
-Deployed URL: (https://bw50-secret-family-recipes.herokuapp.com/)
+[Deployed Heroku API](https://bw50-secret-family-recipes.herokuapp.com/)
 
 ## API Endpoints
 
